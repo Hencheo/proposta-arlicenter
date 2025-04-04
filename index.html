@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial - Aplicativo Arlicenter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero" id="inicio">
+        <div class="container">
+            <img src="assets/01-banner-inicial.png" alt="Banner Arlicenter" class="hero-image" data-aos="fade-up">
+            <h1 data-aos="fade-up" data-aos-delay="200">Proposta Comercial</h1>
+            <h2 data-aos="fade-up" data-aos-delay="300">Aplicativo Arlicenter</h2>
+            <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="500">
+                <span>Role para baixo</span>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="indice section-light" id="indice">
+        <div class="container">
+            <h2 data-aos="fade-up">Índice</h2>
+            <div class="indice-grid" data-aos="fade-up" data-aos-delay="200">
+                <a href="#visao-geral" class="indice-item">Visão Geral</a>
+                <a href="#importancia" class="indice-item">Por Que Esse Projeto é Importante</a>
+                <a href="#funcionamento" class="indice-item">Como o Aplicativo Vai Funcionar</a>
+                <a href="#tecnologias" class="indice-item">Tecnologias Utilizadas</a>
+                <a href="#cronograma" class="indice-item">Cronograma de Entregas</a>
+                <a href="#funcionalidades" class="indice-item">Funcionalidades Detalhadas</a>
+                <a href="#beneficios" class="indice-item">Benefícios Diretos Para o Cliente</a>
+                <a href="#fluxo" class="indice-item">Fluxo do Usuário</a>
+                <a href="#precificacao" class="indice-item">Precificação e Custos</a>
+                <a href="#contato" class="indice-item">Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="visao-geral section-dark" id="visao-geral">
+        <div class="container">
+            <h2 data-aos="fade-up">Visão Geral</h2>
+            <p data-aos="fade-up" data-aos-delay="200">
+                Esta proposta apresenta o plano completo para o desenvolvimento de um aplicativo móvel da loja Arlicenter, 
+                com o objetivo de melhorar a comunicação com os clientes, facilitar a consulta de boletos e 
+                garantir mais praticidade nos pagamentos via Pix.
+            </p>
+            <div class="mockup-container" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/tela-de-login.png" alt="Mockup da tela de login" class="mockup-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="importancia section-light" id="importancia">
+        <div class="container">
+            <h2 data-aos="fade-up">Por Que Esse Projeto é Importante</h2>
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                    Atualmente, muitos clientes da loja enfrentam dificuldades em saber quais boletos estão pendentes, 
+                    pagos ou vencidos. Isso gera filas, aumenta a sobrecarga no atendimento presencial e afeta a 
+                    experiência do cliente. Este aplicativo resolve esse problema ao oferecer uma plataforma direta, 
+                    simples e prática para o cliente acessar suas informações financeiras.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="funcionamento section-dark" id="funcionamento">
+        <div class="container">
+            <h2 data-aos="fade-up">Como o Aplicativo Vai Funcionar</h2>
+            <div class="funcionamento-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-content">
+                    <p>
+                        O cliente da loja fará login com seu CPF e senha. Ao entrar, ele poderá visualizar seus boletos 
+                        (pagos, pendentes, e a vencer), além do seu limite de crédito disponível. Se quiser pagar um boleto, 
+                        o aplicativo gera um QR Code Pix automaticamente, e o cliente faz o pagamento no banco de sua escolha. 
+                        Quando o pagamento for confirmado, o próprio sistema vai atualizar os dados e notificar o cliente.
+                    </p>
+                </div>
+                <div class="image-content">
+                    <img src="assets/fluxo-pagamento-pix.png" alt="Fluxo de pagamento" class="flow-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tecnologias section-light" id="tecnologias">
+        <div class="container">
+            <h2 data-aos="fade-up">Tecnologias Utilizadas (e Por Que)</h2>
+            <div class="tech-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="tech-card">
+                    <h3>React Native (Frontend)</h3>
+                    <div class="tech-details">
+                        <div class="tech-why">
+                            <h4>Por que foi escolhido:</h4>
+                            <p>Permite criar um único aplicativo que funciona tanto em Android quanto iOS, reduzindo o custo e o tempo de desenvolvimento.</p>
+                        </div>
+                        <div class="tech-benefit">
+                            <h4>Benefício direto:</h4>
+                            <p>Economia para o cliente, pois evita criar dois aplicativos separados.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <h3>Django (Backend/API)</h3>
+                    <div class="tech-details">
+                        <div class="tech-why">
+                            <h4>Por que foi escolhido:</h4>
+                            <p>É uma plataforma segura, robusta e confiável para criar sistemas que se comunicam com APIs externas (como o Bling e a Cora).</p>
+                        </div>
+                        <div class="tech-benefit">
+                            <h4>Benefício direto:</h4>
+                            <p>Estabilidade e segurança para manter o aplicativo funcionando corretamente.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <h3>Firebase (Autenticação e Notificações)</h3>
+                    <div class="tech-details">
+                        <div class="tech-why">
+                            <h4>Por que foi escolhido:</h4>
+                            <p>Permite autenticar os usuários com CPF e senha de forma segura, além de enviar notificações push.</p>
+                        </div>
+                        <div class="tech-benefit">
+                            <h4>Benefício direto:</h4>
+                            <ul>
+                                <li>Redução de custo, pois o Firebase oferece plano gratuito para início.</li>
+                                <li>Economia de horas de desenvolvimento, pois evita ter que programar um sistema de autenticação do zero.</li>
+                                <li>Segurança garantida pela Google, que opera o serviço.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <h3>Render (Hospedagem Backend)</h3>
+                    <div class="tech-details">
+                        <div class="tech-why">
+                            <h4>Por que foi escolhido:</h4>
+                            <p>É um serviço confiável e simples para hospedar o backend do aplicativo com ótimo custo-benefício.</p>
+                        </div>
+                        <div class="tech-benefit">
+                            <h4>Benefício direto:</h4>
+                            <p>Menor custo operacional mensal e facilidade de manutenção futura.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-image" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/configuracao-inicial-apis.png" alt="Configuração APIs" class="api-config-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="cronograma section-dark" id="cronograma">
+        <div class="container">
+            <h2 data-aos="fade-up">Cronograma de Entregas</h2>
+            <div class="timeline" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Semanas 1 a 2: Pesquisa, Planejamento e Backend Inicial</h3>
+                        <ul>
+                            <li>Pesquisa das APIs Bling e Cora (PIX).</li>
+                            <li>Criação inicial do backend Django.</li>
+                            <li>Hospedagem inicial no Render.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Semanas 3 a 4: Frontend Inicial – Login e Painel Básico</h3>
+                        <ul>
+                            <li>Desenvolvimento em React Native.</li>
+                            <li>Tela de login com CPF e senha (Firebase Auth).</li>
+                            <li>Painel básico de boletos.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Semanas 5 a 6: Integração Avançada (PIX) e Notificações</h3>
+                        <ul>
+                            <li>Integração com API Cora (QR Codes PIX).</li>
+                            <li>Webhook para atualização automática de pagamentos.</li>
+                            <li>Notificações push via Firebase.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Semanas 7 a 8: Frontend Completo e Testes Finais</h3>
+                        <ul>
+                            <li>Painel completo com gráficos e histórico.</li>
+                            <li>Testes e validações finais em Android e iOS.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="funcionalidades section-light" id="funcionalidades">
+        <div class="container">
+            <h2 data-aos="fade-up">Funcionalidades Detalhadas</h2>
+            <div class="feature-list" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" fill="#60cda0"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12ZM12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" fill="#60cda0"/>
+                        </svg>
+                    </div>
+                    <div class="feature-text">Login com CPF e senha (via Firebase Auth)</div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 12H15M12 16H15M9 12H9.01M9 16H9.01" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 3H15V7H9V3Z" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="feature-text">Consulta de boletos e limites (via Bling)</div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4V2M12 20V22M6.31412 6.31412L4.8999 4.8999M17.6999 17.6999L19.1141 19.1141M4 12H2M20 12H22M6.31412 17.6999L4.8999 19.1141M17.6999 6.31412L19.1141 4.8999" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#60cda0" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="feature-text">Geração de QR Code PIX (via Cora)</div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.5 9L12 16.5L4.5 9" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="feature-text">Atualização automática de status de pagamento</div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 6V12L16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="feature-text">Envio de notificações personalizadas para o cliente</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="beneficios section-dark" id="beneficios">
+        <div class="container">
+            <h2 data-aos="fade-up">Benefícios Diretos Para o Cliente</h2>
+            <div class="benefits-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 8H19C20.1046 8 21 8.89543 21 10V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V10C3 8.89543 3.89543 8 5 8H6M15 5L12 2M12 2L9 5M12 2V14" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Redução de filas no atendimento presencial</h3>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 14L4 9L9 4M15 4L20 9L15 14" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 16V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V16" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Menor risco de inadimplência por falta de informação</h3>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 18H12.01M8 21H16C17.1046 21 18 20.1046 18 19V5C18 3.89543 17.1046 3 16 3H8C6.89543 3 6 3.89543 6 5V19C6 20.1046 6.89543 21 8 21Z" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Atendimento mais moderno e tecnológico</h3>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8C10.3432 8 9 9.34315 9 11V13C9 14.6569 10.3432 16 12 16C13.6569 16 15 14.6569 15 13V11C15 9.34315 13.6569 8 12 8Z" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19 11V13C19 16.866 15.866 20 12 20C8.13401 20 5 16.866 5 13V11" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 20V22" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 22H16" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Economia em desenvolvimento (tecnologias gratuitas ou de baixo custo)</h3>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.4 15C19.1277 15.8031 18.9 16.6106 18.9 17.5C18.9 18.9 19.4 20.5 19.4 20.5C19.4 20.5 16.4 20.9 12 20.9C7.6 20.9 4.6 20.5 4.6 20.5C4.6 20.5 5.1 18.9 5.1 17.5C5.1 16.6106 4.87229 15.8031 4.6 15" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.3674 7.70708L19.5 12L21 14.5" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.63258 7.70708L4.5 12L3 14.5" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 7C13.6569 7 15 5.65685 15 4C15 2.34315 13.6569 1 12 1C10.3431 1 9 2.34315 9 4C9 5.65685 10.3431 7 12 7Z" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.4 9.92939C20.5 8.82853 21 7.27939 21 7.27939C21 7.27939 18.9 3.17939 12 3.17939C5.1 3.17939 3 7.27939 3 7.27939C3 7.27939 3.5 8.82853 4.6 9.92939" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Segurança na autenticação (Google/Firebase)</h3>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 10H19C21 10 22 9 22 7C22 5 21 4 19 4H17.5C17.2348 4 16.9804 4.10536 16.8 4.29289L12.5 9H7.5C7.36739 9 7.24021 9.05268 7.14645 9.14645C7.05268 9.24021 7 9.36739 7 9.5V14.5C7 14.6326 7.05268 14.7598 7.14645 14.8536C7.24021 14.9473 7.36739 15 7.5 15H10.2906C10.8624 15 11.4087 15.2284 11.8052 15.6248L15.1948 18.6248C15.4559 18.8562 15.7955 19 16.1487 19H16.5C16.8978 19 17.2794 18.842 17.5607 18.5607C17.842 18.2794 18 17.8978 18 17.5V10.4142C18 10.2899 17.9473 10.1707 17.8536 10.0858L17.1464 9.5C17.0527 9.42426 17 9.30491 17 9.18056V9" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.9998 9L5.99976 9.00002M5.99976 9.00002C5.99976 7.00002 4.99976 7.00002 4.99976 7.00002C3.99976 7.00002 2.99976 8.00002 2.99976 9.00002C2.99976 10 3.99976 11 4.99976 11C4.99976 11 5.99976 11 5.99976 9.00002Z" stroke="#60cda0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Entregas por etapas, com acompanhamento contínuo</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fluxo section-light" id="fluxo">
+        <div class="container">
+            <h2 data-aos="fade-up">Fluxo do Usuário</h2>
+            <div class="fluxo-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="fluxo-steps">
+                    <div class="fluxo-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <p>Cliente abre o app e digita CPF e senha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="fluxo-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <p>Sistema verifica se o CPF está cadastrado via Bling.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="fluxo-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <p>Caso esteja, login é autenticado via Firebase.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="fluxo-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <p>O cliente acessa seu painel:
+                                <ul>
+                                    <li>Visualiza boletos pagos, pendentes e futuros.</li>
+                                    <li>Consulta seu limite de crédito.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="fluxo-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <p>Se desejar pagar, gera QR Code PIX automaticamente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="fluxo-step">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <p>Após pagamento, o app é atualizado e o cliente recebe notificação.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fluxo-image">
+                    <img src="assets/02-fluxo-de-pagamento-3d.png" alt="Fluxo de pagamento 3D" class="flow-3d-image">
+                </div>
+            </div>
+            <p class="fluxo-diagram" data-aos="fade-up" data-aos-delay="300">
+                Diagrama visual disponível em: <a href="https://whimsical.com/fluxo-app-arlicenter-Exemplo" target="_blank">https://whimsical.com/fluxo-app-arlicenter-Exemplo</a>
+            </p>
+        </div>
+    </section>
+
+    <section class="precificacao section-dark" id="precificacao">
+        <div class="container">
+            <h2 data-aos="fade-up">Precificação e Custos</h2>
+            <div class="pricing-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="pricing-main">
+                    <h3>Valor Total do Desenvolvimento</h3>
+                    <div class="price">R$ 5.000,00</div>
+                    
+                    <div class="payment-options">
+                        <div class="payment-option">
+                            <h4>Pagamento mensal:</h4>
+                            <p>2 parcelas de R$ 2.500,00</p>
+                        </div>
+                        
+                        <div class="payment-option">
+                            <h4>Pagamento por etapa:</h4>
+                            <p>4 parcelas de R$ 1.250,00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="additional-costs">
+                    <h3>Custos Adicionais (mensais, responsabilidade do cliente)</h3>
+                    <table class="costs-table">
+                        <thead>
+                            <tr>
+                                <th>Serviço</th>
+                                <th>Valor Estimado</th>
+                                <th>Observação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Firebase (autenticação e push)</td>
+                                <td>Gratuito (inicialmente)</td>
+                                <td>Pode aumentar conforme número de usuários.</td>
+                            </tr>
+                            <tr>
+                                <td>Render (hospedagem backend)</td>
+                                <td>R$200 a R$250</td>
+                                <td>Custo fixo para manter o app no ar.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato section-light" id="contato">
+        <div class="container">
+            <h2 data-aos="fade-up">Contato</h2>
+            <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
+                <p>Fico à disposição para esclarecer dúvidas e iniciar nossa parceria.</p>
+                <p>Atenciosamente,</p>
+                <p class="signature">Hencheo.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Arlicenter. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html> 
