@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const initialPrice = 11000;  // Preço inicial alto
         const targetPrice = 5000;    // Preço final baixo
         let currentPrice = initialPrice;
-        const duration = 6500; // 2.5 segundos
+        const duration = 4500; // 2.5 segundos
         const frameRate = 120;
         const frameDuration = 1000 / frameRate;
         const totalFrames = duration / frameDuration;

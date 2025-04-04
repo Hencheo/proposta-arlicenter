@@ -739,11 +739,87 @@ p {
 }
 
 .price {
+    position: relative;
+    display: inline-block;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--primary-color);
-    margin: 20px 0;
-    text-shadow: 0 0 10px var(--primary-glow);
+    color: var(--white);
+    padding: 15px 30px;
+    margin: 30px 0;
+    background: linear-gradient(135deg, var(--primary-color-dark), var(--primary-color));
+    border-radius: 10px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px var(--primary-glow);
+    z-index: 1;
+}
+
+.price::before, .price::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    background: var(--primary-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 0 10px var(--primary-glow);
+    z-index: -1;
+}
+
+.price::before {
+    left: -15px;
+    bottom: -20px;
+    transform: skewY(30deg);
+    border-bottom-left-radius: 10px;
+}
+
+.price::after {
+    right: -15px;
+    bottom: -20px;
+    transform: skewY(-30deg);
+    border-bottom-right-radius: 10px;
+}
+
+.price::before {
+    background: linear-gradient(to bottom, var(--primary-color), var(--primary-color-dark));
+}
+
+.price::after {
+    background: linear-gradient(to bottom, var(--primary-color), var(--primary-color-dark));
+}
+
+/* Adicionar fitas decorativas */
+.price .ribbon-left, .price .ribbon-right {
+    position: absolute;
+    bottom: -30px;
+    width: 20px;
+    height: 50px;
+    background: var(--primary-color-dark);
+    z-index: -2;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.price .ribbon-left {
+    left: -25px;
+    transform: skewY(-15deg);
+    border-bottom-left-radius: 5px;
+}
+
+.price .ribbon-right {
+    right: -25px;
+    transform: skewY(15deg);
+    border-bottom-right-radius: 5px;
+}
+
+/* Adicionar brilho pulsante ao distintivo */
+@keyframes badge-glow {
+    0%, 100% {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px var(--primary-glow);
+    }
+    50% {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 25px var(--primary-glow), 0 0 40px var(--primary-glow);
+    }
+}
+
+.price {
+    animation: badge-glow 3s infinite;
 }
 
 .payment-options {
@@ -925,6 +1001,26 @@ footer {
     
     .price {
         font-size: 2rem;
+    }
+    
+    /* Ajustes para a tabela de custos em telas pequenas */
+    .costs-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .costs-table th, 
+    .costs-table td {
+        min-width: 120px;
+        white-space: normal;
+        word-break: break-word;
+    }
+    
+    .additional-costs {
+        padding: 30px 20px;
+        overflow: hidden;
     }
 }
 
