@@ -1,0 +1,6 @@
+# Arquivo de configuração do GitHub Pages
+# Define a partir de qual branch e pasta o site será servido
+
+build:
+  source: /
+  branch: master
